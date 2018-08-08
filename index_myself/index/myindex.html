@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>William_Ling</title>
+
+    <!--css link-->
+    <link rel="stylesheet" type="text/css" href="../lib/responsiveslides-1.55.css">
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap-4.1.1.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../lib/font-awesome.min.css">
+
+    <!--JavaScript src-->
+    <script src="../lib/jquery-3.3.1.js"></script>
+    <script src="../lib/responsiveslides-1.55.js"></script>
+    <script src="../lib/bootstrap-4.1.1.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../lib/vue.js"></script>
+
+</head>
+<body>
+
+    <header><!--导航-->
+        <div class="myheader bg-dark text-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 col-lg-2 py-2">
+                        <img src="../img/logo.png" style="float: left;" alt="logo">
+                    </div>
+                    <div class="col-2 col-lg-10">
+                        <nav class="navbar navbar-expand-lg  bg-dark">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link text-danger" href="#">Home <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Dropdown
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link disabled text-light" href="#">Disabled</a>
+                                    </li>
+                                </ul>
+                                <form class="form-inline my-2 my-lg-0">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+            <!--轮播-->
+            <div class="img-myself">
+                <div class="img-Slide">
+                    <ul class="rslides" id="dowebok">
+                        <li><img src="../img/1.jpg" alt="#"></li>
+                        <li><img src="../img/2.jpg" alt="#"></li>
+                        <li><img src="../img/3.jpg" alt="#"></li>
+                        <li><img src="../img/4.jpg" alt="#"></li>
+                        <li><img src="../img/6.jpg" alt="#"></li>
+                        <li><img src="../img/7.jpg" alt="#"></li>
+                        <li><img src="../img/8.jpg" alt="#"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--功能模块-->
+            <div class="row index-my">
+                <div class="col-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <a href="#myself" class="text-dark"><strong>个人档案</strong></a>
+                            <a><i class="fa fa-user-circle-o fa-2x"></i></a>
+                            <p class="text-center text-warning">进入我的世界</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <a href="#interest" class="text-dark"><strong>兴趣爱好</strong></a>
+                            <i class="fa fa-ship fa-2x"></i>
+                            <p class="text-center text-warning">享受生活乐趣</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="panel panel-default" id="pFunc1">
+                        <div class="panel-body">
+                            <a href="#phone" class="text-dark"><strong>联系方式</strong></a>
+                            <i class="fa fa-volume-control-phone fa-2x"></i>
+                            <br>
+                            <p class="text-center text-warning">时常联系活跃</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container div-divider">
+                <hr class="hr-1">Now is Myindex<hr class="hr-2">
+                <div class="row">
+                    <div class="col-lg-9">
+                       <div class="list-group div-article">
+                           <!--标题栏-->
+                           <a href="#" class="list-group-item active item_article_first">
+                               <h4 class="list-group-item-heading">My Life is my happiness</h4>
+                           </a>
+                            <!--文章列表-->
+                           <div class="list-group-item item_article">
+                               <div class="row">
+                                    <div class="div-center col-xl-9">
+                                        <div class="list-group-item-heading div_article_title" id="myself">
+                                            <i class="fa fa-th-list fa-lg"></i>
+                                            <strong>个人档案：</strong>
+                                        </div>
+                                        <h5 class="list-group-item-text div_article_content text-info">就读院校：</h5>
+                                        <p class="text-right">******</p>
+                                        <h5 class="list-group-item-text div_article_content text-info">就读专业：</h5>
+                                        <p class="text-right">******</p>
+                                        <h5 class="list-group-item-text div_article_content text-info">入学年份-毕业年份：</h5>
+                                        <p class="text-right">******</p>
+                                        <h5 class="list-group-item-text div_article_content text-info">专研方向：</h5>
+                                        <p class="text-right">******</p>
+                                    </div>
+                                   <div class="div_right_info col-xl-3">
+                                       <img class="img-rounded iv_article" src="../img/myschool.jpg" alt="MyCard">
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="list-group-item item_article">
+                               <div class="row">
+                                   <div class="row">
+                                       <div class="div-center col-xl-9">
+                                           <div class="list-group-item-heading div_article_title">
+                                               <i class="fa fa-joomla fa-lg"></i>
+                                               <strong>个人爱好：</strong>
+                                           </div>
+                                       </div>
+                                       <div class="div_right_info col-xl-3" id="interest"></div>
+                                   </div>
+                                   <div class="row">
+                                       <div class="div-love col-xl-6">
+                                           <div class="list-group-item-heading div_article_title text-left">
+                                                卡路里-（电影《西虹市首富》插曲）
+                                           </div>
+                                       </div>
+                                       <div class="div_right_mp3 col-xl-6">
+                                           <audio controls>
+                                               <source src="../MP3/001.mp3" type="audio/mpeg">
+                                           </audio>
+                                       </div>
+                                   </div>
+                                   <div class="row">
+                                       <div class="div-love col-xl-6">
+                                           <div class="list-group-item-heading div_article_title text-left">
+                                               彩虹之下-（电影《西虹市首富》插曲）
+                                           </div>
+                                       </div>
+                                       <div class="div_right_mp3 col-xl-6">
+                                           <audio controls>
+                                               <source src="../MP3/002.mp3" type="audio/mpeg">
+                                           </audio>
+                                       </div>
+                                   </div>
+                                   <div class="row">
+                                       <div class="div-love col-xl-6">
+                                           <div class="list-group-item-heading div_article_title text-left">
+                                               需要人陪-（电影《西虹市首富》插曲）
+                                           </div>
+                                       </div>
+                                       <div class="div_right_mp3 col-xl-6">
+                                           <audio controls>
+                                               <source src="../MP3/003.mp3" type="audio/mpeg">
+                                           </audio>
+                                       </div>
+                                   </div>
+                                   <div class="row">
+                                       <div class="div-love col-xl-6">
+                                           <div class="list-group-item-heading div_article_title text-left">
+                                               爱的礼赞-（电影《西虹市首富》插曲）
+                                           </div>
+                                       </div>
+                                       <div class="div_right_mp3 col-xl-6">
+                                           <audio controls>
+                                               <source src="../MP3/004.mp3" type="audio/mpeg">
+                                           </audio>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="div_phone_number" id="phone">
+                            <a href="#" class="list-group-item active item_article_first">
+                                <h4 class="list-group-item-heading">联系方式</h4>
+                            </a>
+                            <div class="card" style="width:auto;">
+                                <img class="card-img-top" src="../img/phone.jpg" alt="phone">
+                                <div class="card-body">
+                                    <h5 class="card-title"><strong>电话</strong></h5>
+                                    <p class="card-text">***********</p>
+                                    <h5 class="card-title"><strong>QQ</strong></h5>
+                                    <p class="card-text">*********</p>
+                                    <h5 class="card-title"><strong>邮箱</strong></h5>
+                                    <p class="card-text">*********@qq.com</p>
+                                    <h5 class="card-title"><strong>微信</strong></h5>
+                                    <p class="card-text">*********</p>
+                                    <h5 class="card-title"><strong>微博</strong></h5>
+                                    <p class="card-text">******</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer></footer>
+</body>
+<script>
+
+</script>
+</html>
